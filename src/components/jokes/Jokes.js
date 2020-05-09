@@ -1,0 +1,322 @@
+import React,{useState} from 'react'
+
+// import piadas from '../../piadas.json'
+
+import Joke from './Joke/Joke'
+
+const Jokes = (props)=>{
+
+    const piadas = [
+        {
+          "perg": "QUAL O CUMULO DA SORTE?",
+          "resp": "Ser atropelado por uma anbulancia na frente do hospital"
+        },
+        {"perg": "Qual é a comida q liga e desliga?", "resp": "estrogONOFF!"},
+        {"perg": "O que pode ter mais de 36 acentos?", "resp": "O onibus"},
+        {"perg": "Qual é a religiao dos cachorros ?", "resp": "Caodomble"},
+        {"perg": "Qual é a religiao dos bodes?", "resp": "Bodista"},
+        {"perg": "Qual é a religiao dos gatos?", "resp": "gatolicos"},
+        {"perg": "Qual o pai da orta?", "resp": "Paipino"},
+        {
+          "perg": "Qual é o nome do carro que mostra que vai chover?",
+          "resp": "Celta Preto"
+        },
+        {
+          "perg": "O boi e a vaca foram ao cinema, como eles pagaram a conta",
+          "resp": "Eles fizeram uma vaquinha"
+        },
+        {
+          "perg": "O que é o que é tem casca, mas não é fruta, tem miolo, mas não pensa?",
+          "resp": "É o pão!"
+        },
+        {
+          "perg": "O que é o que é: Quanto mais curto for, mais rápido é?",
+          "resp": "O Tempo"
+        },
+        {
+          "perg": "Por que o menino estava dando agua quente para a galinha?",
+          "resp": "Para ela botar ovo cozido!"
+        },
+        {
+          "perg": "Porque A Abelha Foi Eletrocutada?",
+          "resp": "Porque Pousou em uma ROSA-CHOQUE"
+        },
+        {
+          "perg": "Qual é o Problema Do decorador quando foi ao medico?",
+          "resp": "Decoração"
+        },
+        {
+          "perg": "São 12 irmãs, todas elas tem meia mais nenhuma tem sapato?",
+          "resp": "As horas"
+        },
+        {
+          "perg": "O que Deus te da a 1° vez, a 2° vez e a terceira vez você tem que comprar?",
+          "resp": "Os dentes"
+        },
+        {
+          "perg": "O QUE ACONTECE QUANDO DOIS GAMBÁS DISCUTEM?",
+          "resp": "A COISA FEDE"
+        },
+        {"perg": "O QUE UM NADADOR FAZ PARA BATER UM RECORDE?", "resp": "NADA!"},
+        {
+          "perg": "Por que em baixo do ombro é o único lugar do corpo que nao tem ar?",
+          "resp": "Porque é sóvacuo!!"
+        },
+        {
+          "perg": "Porque o Batman colocou seguro no batmovel?",
+          "resp": "Porque ele tem medo que robin"
+        },
+        {
+          "perg": "O que um cupim falou para o outro?",
+          "resp": "Me da um cupim-d'agua"
+        },
+        {"perg": "O QUE FAZ O BATMAN PARA ABRIR A BAT-CAVERNA?", "resp": "Bat-palma"},
+        {"perg": "O QUE O CAVALO FAZIA NO ORELHÃO?", "resp": "passava trote"},
+        {
+          "perg": "O que é um pontinho vermelho em cima de um castelo?",
+          "resp": "Uma pimenta-do-reino"
+        },
+        {
+          "perg": "O que é um monte de pontinhos amarelos numa cozinha?",
+          "resp": "Yellowtrodomésticos"
+        },
+        {
+          "perg": "Porque que o macaco prego tem medo de entra no mar?",
+          "resp": "Por que ele tem medo do tubarão martelo!"
+        },
+        {
+          "perg": "O batman vestiu seu batterno e seu batsapato. Onde ele foi?",
+          "resp": "No batzado"
+        },
+        {"perg": "Qual o cúmulo do esquecimento?", "resp": "Não sei, esqueci!"},
+        {
+          "perg": "Vc sabe pq o mar é azul?",
+          "resp": "Pq os peixes fazem 'blue... blue... blue...'"
+        },
+        {
+          "perg": "VC SABE O QUE UMA FORMIGA DISSE PARA A OUTRA?",
+          "resp": "O MEU PÉ ESTÁ FORMIGANDO"
+        },
+        {"perg": "O que é uma solução?!", "resp": "É um soluço grandão!"},
+        {"perg": "Como acabam os jogoss olimpicos entre patos", "resp": "Empatados"},
+        {
+          "perg": "Porque o homem colocou uma cama elástica no Pólo Norte?",
+          "resp": "Pro urso polar"
+        },
+        {"perg": "Porque o gato é malandro?", "resp": "Porque já nasce com bigode"},
+        {
+          "perg": "Por que o policial não usa sabonete?",
+          "resp": "Porque ele prefere DETERGENTE."
+        },
+        {
+          "perg": "Voce sabe qual a piada do tigre???",
+          "resp": "Nao tem piada tigre nao pia!"
+        },
+        {
+          "perg": "Qual é a diferença entre o tatu e a baiana??",
+          "resp": "Otatu faz o buraco, e a baiana vatapá."
+        },
+        {
+          "perg": "O que  a impressora disse para o papel?",
+          "resp": "Eu sempre deixo uma boa impressão."
+        },
+        {"perg": "O que o banco disse para o dinheiro", "resp": "Você me paga!"},
+        {"perg": "Qual é o fim da picada?", "resp": "Quando o mosquito vai embora"},
+        {
+          "perg": "Você sabe qual é o cumulo da velocidade?",
+          "resp": "Corre em volta da mesa e pegar a si mesmo."
+        },
+        {
+          "perg": "Um pato botou um ovo em cima de uma montanha!Pra que lado o ovo caiu?",
+          "resp": "Pra nem um lado, pois pato não bota ovos, quem bota ovos é a pata."
+        },
+        {
+          "perg": "O que é um pontinho marrom no meio do pulmão?",
+          "resp": "É uma 'brown'quite"
+        },
+        {
+          "perg": "O que cai em pé e corre deitado?",
+          "resp": "Uma minhoca de para-quedas"
+        },
+        {
+          "perg": "Sabe pq o crocodilo ficou de castigo?",
+          "resp": "Por que ele réptil."
+        },
+        {"perg": "O que são dois pontinhos vermelhos na salada?", "resp": "Tomates"},
+        {"perg": "Qual é o país que todo padeiro é rápido?", "resp": "Japão"},
+        {"perg": "O que é um pontinho azul no céu?", "resp": "Um urublue"},
+        {
+          "perg": "Um elefante, um cavalo, um canguru e um rinoceronte estavam embaixo de um guarda chuva. Qual deles se molhou?",
+          "resp": "Nenhum. Não tava chovendo"
+        },
+        {
+          "perg": "Por que a galinha bateu de cabeça na parede?",
+          "resp": "Porque ela queria um galo."
+        },
+        {
+          "perg": "O que a zebra falou para a pulga?",
+          "resp": "Voce esta na minha lista negra."
+        },
+        {
+          "perg": "O galinheiro tinha 10 galinha, um ladrão foi lá levou mais uma quantas ficou...",
+          "resp": "11, por que ele levou mais uma se tinha 10."
+        },
+        {
+          "perg": "O que é um pontinho preto em cima de um castelo?",
+          "resp": "A Pimenta do Reino"
+        },
+        {
+          "perg": "Sou branco como cal todo mundo sabe me abrir ninguem sabe me fechar?",
+          "resp": "OVO"
+        },
+        {
+          "perg": "Sabe o que são 6 pontinho azul,amarelo,preto,prata,verde e rosa na grama?",
+          "resp": "6 formiguinhas vestidas de power-rangers!"
+        },
+        {"perg": "Porque a vaca da leite?", "resp": "Porque ela não sabe vender."},
+        {
+          "perg": "Por que o peixe esta sempre comendo?",
+          "resp": "Porque esta sempre com água na boca"
+        },
+        {"perg": "Qual é o vinho que não tem alcool?", "resp": "oVinho de codorna"},
+        {
+          "perg": "Voce sabe quem expulsou Sao Bernardo do campo?",
+          "resp": "Foi o Juiz de Fora."
+        },
+        {"perg": "Qual o tio da construcao?", "resp": "O 'tio Jolo'"},
+        {"perg": "Qual o pai das aves?", "resp": "O 'pai Vao'"},
+        {
+          "perg": "Um alpinista pisou em falso e caiu da montanha. Qual o nome dele?",
+          "resp": "Caio Rolando da Rocha"
+        },
+        {
+          "perg": "Como se mata um elefante cor-de-rosa?",
+          "resp": "De jeito nenhum, não existe elfante rosa"
+        },
+        {"perg": "Quem é o rei da cozinha?", "resp": "É o 'REIPOLHO'"},
+        {"perg": "O que é que acaba logo que alguém fala?", "resp": "O silêncio"},
+        {
+          "perg": "O que é? O que é? Um pontinho amarelo no meio da onda?",
+          "resp": "È uma batata da onda"
+        },
+        {"perg": "Quem é a mãe da horta?", "resp": "A mãedioca."},
+        {
+          "perg": "O que é um ponto rosa no meio do show de rock?",
+          "resp": "Um pink floyd"
+        },
+        {
+          "perg": "Sabe o que é uma formiga prateada na grama?",
+          "resp": "Uma formiga de aparelho!"
+        },
+        {
+          "perg": "O que é o que quanto mais se tira mais se tem?",
+          "resp": "Fotografia"
+        },
+        {
+          "perg": "Um peixe foi jogado do decimo andar de um prédio.Qual o nome do peixe?",
+          "resp": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATUM"
+        },
+        {
+          "perg": "Qual a diferença da calça e a bota?",
+          "resp": "A calça a gente bota e a bota a gente calça"
+        },
+        {
+          "perg": "Se jogar um cachorro na água como é que ele sai.",
+          "resp": "Molhado"
+        },
+        {"perg": "Quando o cachorro vira aluminío?", "resp": "Quando ele viralata."},
+        {"perg": "O que o porco-espinho disse para o cacto?", "resp": "Oi mamãe"},
+        {
+          "perg": "Qual a diferença entre um gato e uma Coca?",
+          "resp": "O gato mia e a Coca light"
+        },
+        {
+          "perg": "O que o catchup falou pro outro catchup?",
+          "resp": "É nois nas fritas"
+        },
+        {"perg": "Qual é o cumulo da força?", "resp": "Dobrar uma esquina"},
+        {
+          "perg": "O que o tijolo disse para o outro ?",
+          "resp": "Existe um ciumento entre nós"
+        },
+        {
+          "perg": "Como se faz para o giz vira cobra?",
+          "resp": "Põe o giz na água, daí o gizBOIA!"
+        },
+        {
+          "perg": "Como se faz para o suco virar cobra?",
+          "resp": "Faz cócegas no suco, daí o sucoRI!"
+        },
+        {
+          "perg": "O que é um pontinho roxo no fundo da piscina?",
+          "resp": "Uma ervilha prendendo a respiração."
+        },
+        {"perg": "O que o tomate foi fazer no banco?", "resp": "Tirar um extrato"},
+        {
+          "perg": "Qual é a cidade em que há mais raios do que no resto do mundo?",
+          "resp": "Ohio"
+        },
+        {
+          "perg": "Porque os turistas quando vêm ao Brasil achan o país cheiroso?",
+          "resp": "Porque o Brasil já foi colonia."
+        },
+        {
+          "perg": "O que é um pontinho branco na grama?",
+          "resp": "Uma formiga se preperando para o ano novo?"
+        },
+        {"perg": "Entra na água e não se molha?", "resp": "A sombra"},
+        {"perg": "Tem boca mas não fala?", "resp": "O fogão"},
+        {"perg": "Qual o planeta preferido dos Médicos?", "resp": "Mercúrio"},
+        {
+          "perg": "Qual é a nota musical que tem o poder de curar?",
+          "resp": "Ré médio."
+        },
+        {"perg": "Qual o cosmético que a galinha usa?", "resp": "Ovon"},
+        {"perg": "QUEM É O TIO DA HORTA?", "resp": "O TIOMATE"},
+        {"perg": "O que é uma molécula?", "resp": "É uma menina sapécula."},
+        {
+          "perg": "O que é um pontinho azul no mapa de Santa Catarina?",
+          "resp": "Blumenal"
+        },
+        {"perg": "Qual é o pai da lanchonete?", "resp": "É o paistel!"},
+        {
+          "perg": "Oque é um pontinho preto dentro de um avião?",
+          "resp": "É uma aeroMOSCA"
+        },
+        {
+          "perg": "Dois cachorros entram numa igreja por que não sairam mais?",
+          "resp": "Se entraram so dois como iam sair mais?"
+        },
+        {
+          "perg": "Por que o relojoeiro foi mandado embora do trabalho?",
+          "resp": "Porque vivia perdendo a hora..."
+        },
+        {
+          "perg": "Como faz para um elefante não passar pelo buraquinho de uma agulha?",
+          "resp": "Dá um nó no rabinho dele."
+        },
+        {"perg": "O que um pontinho marrom faz no mar?", "resp": "Um ca'marrom'!"},
+        {
+          "perg": "Onde o Batman e o Robin se conheceram?",
+          "resp": "Em um Bat-Papo..."
+        },
+        {
+          "perg": "Porque o homem colocou uma cama elástica no Pólo Norte ?",
+          "resp": "Pro urso polar"
+        },
+        {
+          "perg": "Por que, não se deve emprestar garafas para as ta-tarugas?",
+          "resp": "Porque elas não devolvem os casco!"
+        }
+      ]
+      
+    const [number, setNumber] = useState(Math.round(Math.random()*Object.keys(piadas).length-1));
+
+    const changeNumberHandler = ()=>{
+        setNumber(Math.round(Math.random()*Object.keys(piadas).length-1))
+    }
+
+    return <Joke question={piadas[number].perg} answer={piadas[number].resp} changeNumber={changeNumberHandler} />
+}
+
+export default Jokes
