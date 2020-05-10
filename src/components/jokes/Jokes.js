@@ -4,7 +4,8 @@ import axios from 'axios'
 import Joke from './Joke/Joke'
 
 const Jokes = (props) => {
-  const url = "https://cors-anywhere.herokuapp.com/http://slicedpixel.com/jokes/jokes.json"
+  // const url = "https://cors-anywhere.herokuapp.com/http://slicedpixel.com/jokes/jokes.json"
+  const url = "http://slicedpixel.com/jokes/jokes.json"
   const [number, setNumber] = useState(Math.round(Math.random()*100));
   const [jokes, setJokes] = useState([{perg:"",resp:""}])
 
