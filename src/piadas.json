@@ -5,7 +5,7 @@
   },
   {"perg": "Qual é a comida q liga e desliga?", "resp": "estrogONOFF!"},
   {"perg": "O que pode ter mais de 36 acentos?", "resp": "O onibus"},
-  {"perg": "Qual é a religiao dos cachorros ?", "resp": "Caodomble"},
+  {"perg": "Qual é a religiao dos cachorros?", "resp": "Caodomble"},
   {"perg": "Qual é a religiao dos bodes?", "resp": "Bodista"},
   {"perg": "Qual é a religiao dos gatos?", "resp": "gatolicos"},
   {"perg": "Qual o pai da orta?", "resp": "Paipino"},
@@ -109,7 +109,7 @@
     "resp": "Otatu faz o buraco, e a baiana vatapá."
   },
   {
-    "perg": "O que  a impressora disse para o papel?",
+    "perg": "O que a impressora disse para o papel?",
     "resp": "Eu sempre deixo uma boa impressão."
   },
   {"perg": "O que o banco disse para o dinheiro", "resp": "Você me paga!"},
@@ -162,7 +162,7 @@
     "resp": "OVO"
   },
   {
-    "perg": "Sabe o que são 6 pontinho azul,amarelo,preto,prata,verde e rosa na grama?",
+    "perg": "Sabe o que são 6 pontinho azul, amarelo, preto, prata, verde e rosa na grama?",
     "resp": "6 formiguinhas vestidas de power-rangers!"
   },
   {"perg": "Porque a vaca da leite?", "resp": "Porque ela não sabe vender."},
@@ -228,7 +228,7 @@
   },
   {"perg": "Qual é o cumulo da força?", "resp": "Dobrar uma esquina"},
   {
-    "perg": "O que o tijolo disse para o outro ?",
+    "perg": "O que o tijolo disse para o outro?",
     "resp": "Existe um ciumento entre nós"
   },
   {
@@ -293,11 +293,11 @@
     "resp": "Em um Bat-Papo..."
   },
   {
-    "perg": "Porque o homem colocou uma cama elástica no Pólo Norte ?",
+    "perg": "Porque o homem colocou uma cama elástica no Pólo Norte?",
     "resp": "Pro urso polar"
   },
   {
-    "perg": "Por que, não se deve emprestar garafas para as ta-tarugas?",
-    "resp": "Porque elas não devolvem os casco!"
+    "perg": "Por que, não se deve emprestar garafas para as tartarugas?",
+    "resp": "Porque elas não devolvem os cascos!"
   }
 ]
