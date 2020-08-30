@@ -24,7 +24,6 @@ const Jokes = (props) => {
         return false
       }
     })
-
   )
 }
 
