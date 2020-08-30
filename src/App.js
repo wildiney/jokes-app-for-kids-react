@@ -1,14 +1,14 @@
-import React from 'react';
-import Jokes from './components/jokes/Jokes';
+import React from 'react'
+import Jokes from './components/Jokes/Jokes'
 
 import './App.css'
 
-function App() {
+function App () {
   return (
     <div className="App">
-     <Jokes />
+      <Jokes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
