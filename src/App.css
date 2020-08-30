@@ -1,5 +1,9 @@
+:root{
+  --primary-color:orangered
+}
+
 .App{
-  padding: 1.5rem;
+  padding:0;
   text-align: center;
   display: flex;
   height: 100%;
@@ -7,17 +11,35 @@
   border: 1px solid gray;
   flex-direction: column;
 }
+.menu{
+  background-color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  padding:.5rem
+}
+.menu h1{
+  margin:0;
+  padding:.5rem;
+  color:white
+}
+
+footer{
+  background-color: var(--primary-color);
+  padding:.5rem;
+  color:white;
+}
+
 .joke{
-  margin: auto;
+  margin: 1.5rem;
   height: 100%;
-  width: 100%;
+  width: auto;
   justify-content: center;
   align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 1fr min-content;
+  grid-template-rows: 50% 35% 15%;
   text-align: center;
 }
+
 
 .joke h2{
   grid-row: 1/2;
