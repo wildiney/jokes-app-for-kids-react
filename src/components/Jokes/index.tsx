@@ -19,7 +19,6 @@ const Jokes: FC = () => {
   <div className={styles.jokes}>
  {jokes.map((joke, idx) => {
    if (idx === number) {
-     console.log(joke)
      return <Joke key={idx} question={joke.question} answer={joke.answer} changeNumber={changeNumberHandler} />
    }
    return null
