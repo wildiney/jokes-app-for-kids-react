@@ -1,0 +1,72 @@
+
+.joke{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding:1.5rem 0;
+  height: 100%;
+  width: auto;
+  max-width: 30rem;
+  text-align: center;
+}
+.answerQuestion{
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  aspect-ratio: 1/1;
+  border-radius: .5rem;
+}
+
+.question{
+  display: flex;
+  padding: .8rem;
+  height: 100%;
+  color:var(--primary-color); 
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content:center ;
+  margin:0;
+  width: 100%;
+  text-align: center;
+  border-radius: .5rem;
+  border: 2px solid var(--secondary-color);
+  word-break: break-word;
+}
+@-webkit-keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.answer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  opacity: 0;
+  border-radius: 0 0 .5rem .5rem;
+  animation: fadeIn 300ms ease-in forwards 2s ;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  /* background-color: var(--tertiary-color); */
+}
