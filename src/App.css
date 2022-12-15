@@ -1,15 +1,14 @@
-:root{
-  --primary-color:#c8553d;
-  --secondary-color:#f28f3b;
-  --tertiary-color:#ffd5c2;
-  --quaternary-color:#ffffff;
-  --quintenary-color:#588b8b;
-  --footer-header:var(--primary-color)
+:root {
+  --primary-color: #c8553d;
+  --secondary-color: #f28f3b;
+  --tertiary-color: #ffd5c2;
+  --quaternary-color: #ffffff;
+  --quintenary-color: #588b8b;
+  --footer-header: var(--primary-color);
 }
 
-
-.App{
-  padding:0;
+.App {
+  padding: 0;
   text-align: center;
   display: flex;
   height: 100%;
@@ -17,4 +16,3 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
