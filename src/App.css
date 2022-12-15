@@ -4,6 +4,7 @@
   --tertiary-color:#ffd5c2;
   --quaternary-color:#ffffff;
   --quintenary-color:#588b8b;
+  --footer-header:var(--primary-color)
 }
 
 
@@ -13,113 +14,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  border: 1px solid gray;
   flex-direction: column;
-}
-.menu{
-  background-color: var(--primary-color);
-  margin-bottom: 0.5rem;
-  padding:.5rem
-}
-.menu h1{
-  margin:0;
-  padding:.5rem;
-  color:var(--quaternary-color);
-  text-transform: uppercase;
+  justify-content: space-between;
 }
 
-footer{
-  background-color: var(--primary-color);
-  padding:.5rem;
-  color:white;
-}
-
-footer a:link, footer a:visited, footer a:active{
-  color: var(--quaternary-color);
-  text-decoration:none;
-}
-footer a:hover{
-  text-decoration:underline
-}
-
-.joke{
-  margin: 1.5rem auto;
-  height: 100%;
-  width: auto;
-  max-width: 30rem;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50% 35% 15%;
-  text-align: center;
-}
-
-
-.joke h2{
-  grid-row: 1/2;
-  grid-column: 1/-1;
-  height: 100%;
-  padding: 1rem;
-  background-color:var(--secondary-color);
-  color: white;
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  align-items: center;
-  justify-items:center ;
-  margin:0;
-  border-radius: .5rem;
-  word-break: break-word;
-  display: flex;
-}
-@-webkit-keyframes fadeIn{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-@keyframes fadeIn{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-.joke p{
-  grid-row: 2/3;
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
-  display: grid;
-  text-transform: uppercase;
-  opacity: 0;
-  animation: fadeIn 300ms ease-in forwards 2s ;
-  align-items: center;
-  word-break: break-word;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--quintenary-color);
-}
-
-.joke button{
-  padding:1rem;
-  width: 100%;
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background-color: var(--quintenary-color);
-  color: white;
-  font-weight: bolder;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 5px;
-  cursor: pointer;
-  outline: none;
-}
-.joke button:active{
-  box-shadow: none;
-}
