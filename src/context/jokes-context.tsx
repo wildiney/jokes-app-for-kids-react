@@ -15,17 +15,28 @@ interface IJokesProvider {
 const initialValues: IJokesContext = {
   number: 0,
   jokes: [{ question: '', answer: '' }],
-  setNumber: () => {},
-  changeNumberHandler: () => {}
+  setNumber: () => { },
+  changeNumberHandler: () => { }
 }
 
 export const JokesContext = createContext(initialValues)
 
+function shuffle (sourceArray: Array<{ question: string, answer: string }>) {
+  for (let i = 0; i < sourceArray.length - 1; i++) {
+    const j = i + Math.floor(Math.random() * (sourceArray.length - i));
+
+    const temp = sourceArray[j];
+    sourceArray[j] = sourceArray[i];
+    sourceArray[i] = temp;
+  }
+  return sourceArray;
+}
+
 export const JokesProvider: FC<IJokesProvider> = ({ children }) => {
-  const [number, setNumber] = useState(Math.round(Math.random() * 100))
-  const [jokes] = useState<Array<{ question: string, answer: string }>>(JokesJson)
+  const [number, setNumber] = useState(0)
+  const [jokes] = useState<Array<{ question: string, answer: string }>>(shuffle(JokesJson))
   const changeNumberHandler = (): void => {
-    setNumber(Math.round(Math.random() * jokes.length))
+    setNumber(prevState => (prevState + 1 > jokes.length - 1 ? 0 : prevState + 1))
   }
 
   return (

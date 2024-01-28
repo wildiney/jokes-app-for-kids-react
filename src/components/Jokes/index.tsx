@@ -11,19 +11,19 @@ const Jokes: FC = () => {
   const { changeNumberHandler } = useContext(JokesContext)
 
   useEffect(() => {
-    const newNumber = Math.round(Math.random() * (jokes.length - 1))
-    setNumber(newNumber)
-  }, [jokes])
+    console.log(jokes.length)
+    setNumber(prevState => (prevState + 1 > jokes.length - 1 ? 0 : prevState + 1))
+  }, [jokes, setNumber])
 
   return (
-  <div className={styles.jokes}>
- {jokes.map((joke, idx) => {
-   if (idx === number) {
-     return <Joke key={idx} question={joke.question} answer={joke.answer} changeNumber={changeNumberHandler} />
-   }
-   return null
- })}
-  </div>
+    <div className={styles.jokes}>
+      {jokes.map((joke, idx) => {
+        if (idx === number) {
+          return <Joke key={idx} question={joke.question} answer={joke.answer} changeNumber={changeNumberHandler} />
+        }
+        return null
+      })}
+    </div>
   )
 }
 
