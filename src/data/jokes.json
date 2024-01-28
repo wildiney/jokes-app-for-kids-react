@@ -12,18 +12,6 @@
     "answer": "O ônibus"
   },
   {
-    "question": "Qual é a religião dos cachorros?",
-    "answer": "Cão-domblé"
-  },
-  {
-    "question": "Qual é a religião dos bodes?",
-    "answer": "Bodismo"
-  },
-  {
-    "question": "Qual é a religião dos gatos?",
-    "answer": "Gatólicos"
-  },
-  {
     "question": "Quem é o pai da orta?",
     "answer": "Pai pino"
   },
@@ -32,7 +20,7 @@
     "answer": "O Celta Preto"
   },
   {
-    "question": "O que é o que é tem casca, mas não é fruta, tem miolo, mas não pensa?",
+    "question": "O que é o que é: tem casca, mas não é fruta, tem miolo, mas não pensa?",
     "answer": "É o pão!"
   },
   {
@@ -49,7 +37,7 @@
   },
   {
     "question": "Qual era o problema do decorador que foi ao medico?",
-    "answer": "Problema Decoração"
+    "answer": "Problema De-coração"
   },
   {
     "question": "São 12 irmãs. Todas tem meia, mas nenhuma tem sapato?",
@@ -64,7 +52,7 @@
     "answer": "Nada!"
   },
   {
-    "question": "Por que em baixo do ombro é o único lugar do corpo que nao tem ar?",
+    "question": "Por que embaixo do ombro é o único lugar do corpo que nao tem ar?",
     "answer": "Porque é só-vácuo!!"
   },
   {
@@ -80,16 +68,12 @@
     "answer": "Bat-palma"
   },
   {
-    "question": "O que o cavalo fazia no orelhão?",
+    "question": "O que o cavalo fazia ao telefone?",
     "answer": "Passava trote"
   },
   {
-    "question": "O que é um pontinho vermelho em cima de um castelo?",
-    "answer": "Uma pimenta-do-reino"
-  },
-  {
     "question": "O que é um monte de pontinhos amarelos numa cozinha?",
-    "answer": "Yellowtrodomésticos"
+    "answer": "Yellow-trodomésticos"
   },
   {
     "question": "Porque que o macaco prego tem medo de entra no mar?",
@@ -106,10 +90,6 @@
   {
     "question": "Você sabe por que o mar é azul?",
     "answer": "Pq os peixes fazem 'blue... blue... blue...'"
-  },
-  {
-    "question": "Você sabe o ue uma formiga disse para a outra?",
-    "answer": "Meu pé está formigando"
   },
   {
     "question": "O que é uma solução?",
@@ -129,15 +109,7 @@
   },
   {
     "question": "Por que o policial não usa sabonete?",
-    "answer": "Porque ele prefere DETERGENTE."
-  },
-  {
-    "question": "Você sabe qual a piada do tigre???",
-    "answer": "Tigre não pia!"
-  },
-  {
-    "question": "Qual é a diferença entre o tatu e a baiana??",
-    "answer": "O tatu faz o buraco e a baiana vatapá"
+    "answer": "Porque ele prefere DETER-GENTE."
   },
   {
     "question": "O que a impressora disse para o papel?",
@@ -161,7 +133,7 @@
   },
   {
     "question": "O que é um pontinho marrom no meio do pulmão?",
-    "answer": "É uma 'brown' quite"
+    "answer": "É uma 'brown-quite"
   },
   {
     "question": "O que cai em pé e corre deitado?",
@@ -192,15 +164,15 @@
     "answer": "Você esta na minha lista negra"
   },
   {
-    "question": "O galinheiro tinha 10 galinha, um ladrão foi lá levou mais uma quantas ficou...",
-    "answer": "11, por que ele levou mais uma se tinha 10"
+    "question": "O galinheiro tinha 10 galinha, um ladrão foi lá levou mais uma. Quantas ficaram",
+    "answer": "11, por que ele levou mais uma e já tinha 10"
   },
   {
     "question": "O que é um pontinho preto em cima de um castelo?",
     "answer": "A Pimenta do Reino"
   },
   {
-    "question": "Sou branco como cal todo mundo sabe me abrir ninguém sabe me fechar?",
+    "question": "Todo mundo sabe me abrir ninguém sabe me fechar?",
     "answer": "OVO"
   },
   {
@@ -225,11 +197,11 @@
   },
   {
     "question": "Qual o tio da construção?",
-    "answer": "O 'tio Jolo'"
+    "answer": "O 'tio-Jolo'"
   },
   {
     "question": "Qual o pai das aves?",
-    "answer": "O 'pai Vão'"
+    "answer": "O 'pai-Vão'"
   },
   {
     "question": "Um alpinista pisou em falso e caiu da montanha. Qual o nome dele?",
@@ -245,11 +217,11 @@
   },
   {
     "question": "O que é? O que é? Um pontinho amarelo no meio da onda?",
-    "answer": "È uma batata da onda"
+    "answer": "Ruffles, a batata da onda"
   },
   {
     "question": "Quem é a mãe da horta?",
-    "answer": "A mãe dioca"
+    "answer": "A mãe-dioca"
   },
   {
     "question": "O que é um ponto rosa no meio do show de rock?",
@@ -301,7 +273,7 @@
   },
   {
     "question": "Como se faz para o giz vira cobra?",
-    "answer": "Põe o giz na água, daí o gizBOIA!"
+    "answer": "Põe o giz na água, daí o giz-BOIA!"
   },
   {
     "question": "Como se faz para o suco virar cobra?",
