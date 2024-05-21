@@ -33,6 +33,7 @@ export default defineConfig({
       }
     })
   ],
+  base: '/react-jokes',
   server: {
     open: true,
     port: 3000
