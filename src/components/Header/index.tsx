@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 
-function Header (): JSX.Element {
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <span className={styles.title}>

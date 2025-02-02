@@ -4,7 +4,7 @@ import Jokes from './components/Jokes'
 
 import './App.css'
 
-function App (): JSX.Element {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
