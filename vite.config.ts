@@ -8,9 +8,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      injectRegister: 'auto',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       manifest: {
@@ -18,6 +17,7 @@ export default defineConfig({
         short_name: 'Jokes',
         description: 'Just old jokes',
         theme_color: '#c8553d',
+        start_url: '/jokes-app-for-kids-react',
         icons: [
           {
             src: 'logo192.png',
@@ -33,7 +33,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/react-jokes',
+  base: '/jokes-app-for-kids-react',
   server: {
     open: true,
     port: 3000
