@@ -1,10 +1,17 @@
 :root {
-  --primary-color: #c8553d;
-  --secondary-color: #f28f3b;
-  --tertiary-color: #ffd5c2;
+  --primary-color: #e84545;
+  --secondary-color: #ff9f1c;
+  --tertiary-color: #ffe8d6;
   --quaternary-color: #ffffff;
   --quintenary-color: #588b8b;
   --footer-header: var(--primary-color);
+  --bg-gradient-start: #fff8f0;
+  --bg-gradient-end: #ffe4cc;
+  --card-bg: #ffffff;
+  --card-shadow: 0 8px 32px rgba(232,69,69,0.15), 0 2px 8px rgba(0,0,0,0.08);
+  --card-border: 3px solid var(--secondary-color);
+  --radius-card: 2rem;
+  --radius-btn: 3rem;
 }
 
 .App {
@@ -15,4 +22,5 @@
   width: 100vw;
   flex-direction: column;
   justify-content: space-between;
+  background: linear-gradient(160deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
 }
