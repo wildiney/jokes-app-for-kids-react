@@ -4,7 +4,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <span className={styles.title}>
-        <h1>Uncle's Jokes</h1>
+        <h1>Uncle's Jokes 😄</h1>
 
       </span>
     </header>

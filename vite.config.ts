@@ -16,7 +16,7 @@ export default defineConfig({
         name: 'Uncle Jokes',
         short_name: 'Jokes',
         description: 'Just old jokes',
-        theme_color: '#c8553d',
+        theme_color: '#e84545',
         start_url: '/jokes-app-for-kids-react',
         icons: [
           {
