@@ -1,8 +1,9 @@
 .footer{
-  background-color: var(--primary-color);
-  padding:.8rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ff6b6b 100%);
+  padding: 1rem;
   color:var(--quaternary-color);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 .footer p{
   padding: 0;
