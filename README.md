@@ -40,8 +40,8 @@ pnpm build      # TypeScript check + production build
 pnpm preview    # Preview production build locally
 pnpm lint       # ESLint with auto-fix
 pnpm deploy     # Build + deploy to GitHub Pages
-npx vitest      # Run tests in watch mode
-npx vitest run  # Run tests once (CI)
+pnpm exec vitest      # Run tests in watch mode
+pnpm exec vitest run  # Run tests once (CI)
 ```
 
 ## Project structure
