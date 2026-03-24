@@ -6,22 +6,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Development
-npm run dev          # Start dev server on port 3000
+pnpm dev             # Start dev server on port 3000
 
 # Build & Preview
-npm run build        # TypeScript compile + Vite production build
-npm run preview      # Preview production build locally
+pnpm build           # TypeScript compile + Vite production build
+pnpm preview         # Preview production build locally
 
 # Lint
-npm run lint         # ESLint with auto-fix on src/
+pnpm lint            # ESLint with auto-fix on src/
 
 # Test
-npx vitest           # Run all tests
-npx vitest run       # Run tests once (CI mode)
-npx vitest run src/components/Jokes  # Run a single test file/directory
+pnpm exec vitest           # Run all tests
+pnpm exec vitest run       # Run tests once (CI mode)
+pnpm exec vitest run src/components/Jokes  # Run a single test file/directory
 
 # Deploy
-npm run deploy       # Build + deploy to GitHub Pages
+pnpm deploy          # Build + deploy to GitHub Pages
 ```
 
 ## Architecture
