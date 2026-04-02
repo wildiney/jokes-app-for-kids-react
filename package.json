@@ -19,7 +19,8 @@
   },
   "pnpm": {
     "overrides": {
-      "serialize-javascript": "^7.0.5"
+      "serialize-javascript": "^7.0.5",
+      "@eslint/plugin-kit": "^0.6.1"
     }
   },
   "devDependencies": {
